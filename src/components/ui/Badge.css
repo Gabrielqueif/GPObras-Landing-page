@@ -1,0 +1,25 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-default {
+  background-color: #E0F2FE; /* Light blue */
+  color: #0284C7; /* Dark blue */
+}
+
+.badge-success {
+  background-color: #ECFCCB; /* Light green */
+  color: #4D7C0F; /* Dark green */
+}
+
+.badge-dark {
+  background-color: var(--primary-navy);
+  color: var(--white);
+}

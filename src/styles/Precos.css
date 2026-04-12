@@ -1,0 +1,266 @@
+.precos-hero {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+
+.precos-hero h1 {
+  font-size: 3rem;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.precos-hero > p {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-green);
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--primary-navy);
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-navy);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+  background-color: var(--white);
+}
+
+.toggle-label.active {
+  color: var(--primary-navy);
+  font-weight: 700;
+}
+
+.toggle-label {
+  color: var(--text-secondary);
+}
+
+.toggle-badge {
+  color: var(--primary-navy);
+  background-color: var(--primary-green);
+  font-size: 0.70rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.pricing-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--white);
+}
+
+.pricing-card.popular {
+  border: 2px solid var(--primary-green);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing-header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.pricing-desc {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 24px;
+  min-height: 40px;
+}
+
+.price {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.price-currency {
+  font-size: 1rem;
+}
+
+.price-period {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.feature-check {
+  color: var(--primary-green-hover);
+  font-weight: bold;
+}
+
+.why-choose-section {
+  background-color: var(--surface-gray);
+  padding: 80px 0;
+}
+
+.why-choose-header {
+  margin-bottom: 48px;
+}
+
+.why-choose-header h2 {
+  font-size: 2rem;
+  color: var(--primary-navy);
+}
+
+.why-choose-header p {
+  color: var(--text-secondary);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.why-card-icon {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #00B4D8;
+}
+
+.why-card h4 {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.faq-section {
+  padding: 80px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.final-cta {
+  background-color: var(--primary-navy);
+  border-radius: var(--radius-lg);
+  padding: 60px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 80px;
+}
+
+.final-cta h2 {
+  color: var(--white);
+  font-size: 2.25rem;
+  margin-bottom: 16px;
+}
+
+.final-cta p {
+  color: #94A3B8;
+  margin-bottom: 32px;
+}
+
+.final-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
