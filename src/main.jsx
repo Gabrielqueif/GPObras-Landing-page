@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './styles/global.css'
+import './styles/Global.css'
 import App from './App.jsx'
 import Ferramentas from './pages/Ferramentas.jsx'
 import Precos from './pages/Precos.jsx'
